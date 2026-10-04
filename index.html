@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Flappy Bird Classic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-wrapper">
+    <header class="game-header">
+      <h1 class="game-title">FLAPPY BIRD</h1>
+      <div class="header-controls">
+        <button id="sound-btn" class="icon-btn" title="Toggle Sound" aria-label="Toggle Sound">
+          <span id="sound-icon">🔊</span>
+        </button>
+        <button id="pause-btn" class="icon-btn" title="Pause Game" aria-label="Pause Game">
+          <span id="pause-icon">⏸️</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="canvas-container">
+      <canvas id="game-canvas" width="380" height="600"></canvas>
+    </div>
+
+    <footer class="game-footer">
+      <div class="control-hints">
+        <span class="key-badge">Space</span> or <span class="key-badge">↑</span> or <span class="key-badge">Click / Tap</span> to Flap
+      </div>
+      <div class="sub-hints">
+        <span class="key-badge">P</span> to Pause &bull; Works with Mouse, Keyboard &amp; Touch
+      </div>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
